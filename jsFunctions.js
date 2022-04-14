@@ -43,16 +43,16 @@ function square(n) {
 console.log(square(8))
 
 //5.Parašyti funkciją, kuri priimtų vieną skaičių, kuris turi būti didesnis už vienetą. Funkcija turi grąžinti visų skaičių sumą, nuo 1 iki įvesto skaičiaus.
-function multiply(n) {
+function sumYourself(n) {
 	if (n === 1) {
 		return 1;
 	}
 	else if (n > 1) {
-		return n * multiply(n-1) ;
+		return n + sumYourself(n-1) ;
 	}
 	return "skaicius mazesnis uz 1"
 }
-console.log(multiply(4));
+console.log(sumYourself(6));
 //6.neiveiktas
 //Parašykite funkciją, kuri priimtų skaičių ir suskaičiuotų, iš kiek sveikų skaičių jos argumentas dalijasi be liekanos (išskyrus vienetą ir patį save)
 // function division(n) {
